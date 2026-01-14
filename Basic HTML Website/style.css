@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+#home-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: center;
+    gap: 2rem;
+}
+
+#review-teachers {
+    padding: 5rem;
+}
+
+#review-teachers-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-review{
+    font-style: italic;
+    margin-top: 0.5rem;
+    opacity: 0.5;
+}
+#footer {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
