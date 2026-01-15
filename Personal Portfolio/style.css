@@ -1,0 +1,101 @@
+:root {
+    --background-color-dark: #242424;
+    --text-color-dark: #e0e0e0;
+    --border-color-dark: #c4c4c4;
+
+    --background-color-light: #f4f4f4;
+    --text-color-light: #000000;
+    --border-color-light: #434343;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    color: var(--text-color-light);
+    background-color: var(--background-color-light);
+}
+
+#home-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: center;
+    gap: 2rem;
+}
+
+#review-teachers {
+    padding: 5rem;
+}
+
+#review-teachers-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#review-teachers-cards blockquote {
+    border: #434343 2px solid;
+    border-radius: 2rem;
+    padding: 2rem;
+
+}
+
+.footer-review {
+    font-style: italic;
+    margin-top: 0.5rem;
+    opacity: 0.5;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1060px) {
+    #about-me {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    #review-teachers-cards {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+    }
+
+    #review-teachers-cards blockquote {
+        border-color: var(--border-color-dark);
+        background-color: #1e1e1e;
+    }
+}
